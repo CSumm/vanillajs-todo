@@ -1,0 +1,174 @@
+:root {
+  --background: blueviolet;
+  font-family: 'Helvetica', 'sans-serif';
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.subheader {
+    margin-top: 20px;
+}
+
+.todolist {
+    display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.js-text-bar {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    vertical-align: baseline;
+}
+
+.js-submit {
+    width: 100%;
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.js-list-item {
+    display: block;
+    position: relative;
+        width: 80%;
+        padding: 20px 20px;
+        margin: 0 auto;
+        font-size: 18px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(150, 150, 150, 0.575);
+    }
+
+    .js-delete {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        margin-right: 20px;
+        }
+
+        .warning {
+            opacity: 0;
+            width: 90%;
+            margin: 0 auto;
+            background-color: crimson;
+            color: white;
+            padding: 20px 40px;
+            transition: opacity 0.2s ease-in-out;
+        }
+        
+        .warning-active {
+           opacity: 1;
+            margin-top: 30px;
+        }
+
+        .done {
+            text-decoration: line-through;
+        }
+
+
+@media (min-width: 570px){
+    .logo {
+        max-width: 50%;
+        margin: 30px auto;
+    }
+
+    .subheader {
+        font-size: 22px;
+    }
+    
+    .todolist {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        width: 50%;
+        margin: 0 auto;
+        padding: 50px;
+        align-items: baseline;
+    }
+    
+    
+    .js-text-bar {
+        width: 60%;
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    
+    .js-submit {
+        width: 30%;
+        padding: 15px 20px;
+        margin-left: 20px;
+        font-size: 22px;
+    }
+    
+    .js-submit:hover {
+        transform: translateY(-5px);
+    }
+    
+    .js-list {
+        width: 50%;
+        margin: 30px auto 0 auto;
+        color: black;
+    }
+    
+    .js-list-item {
+    display: block;
+    position: relative;
+        width: 100%;
+        padding: 20px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(150, 150, 150, 0.575);
+    }
+    
+    .js-list-item:hover {
+        background-color: var(--background);
+        color: white;
+    }
+    
+    .js-delete {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: 20px;
+    }
+    
+    .js-delete:hover {
+      color: rgb(255, 151, 92);
+        }
+    
+    .warning {
+        opacity: 0;
+        width: 50%;
+        margin: 0 auto;
+        background-color: crimson;
+        color: white;
+        padding: 30px 60px;
+        transition: opacity 0.2s ease-in-out;
+    }
+    
+    .warning-active {
+       opacity: 1;
+        margin-top: 30px;
+    }
+    
+    .done {
+        text-decoration: line-through;
+    }
+}
