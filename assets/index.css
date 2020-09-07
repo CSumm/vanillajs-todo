@@ -82,6 +82,12 @@ img {
             text-decoration: line-through;
         }
 
+        footer {
+            margin: 100px 0;
+            text-align: center;
+            height: 20px;
+        }
+
 
 @media (min-width: 570px){
     .logo {
