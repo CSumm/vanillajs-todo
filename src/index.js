@@ -54,6 +54,17 @@ document.querySelector(".js-submit").addEventListener('click', function(e){
         }
 }
 
+if(/<\/?[a-z][\s\S]*>/.test(inputVal)){
+    warning.textContent = "Invalid text type. Cannot take HTML tag input";
+            warning.classList.add("warning-active");
+            
+            setTimeout(() => {
+                  warning.classList.remove("warning-active");
+            }, 5000);
+          
+            return;
+}
+
     let li = document.createElement('li');
     
     li.classList.add('js-list-item');
